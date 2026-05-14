@@ -1,0 +1,26 @@
+/* Desktop-first: всё уменьшается под планшет и мобайл */
+
+@media (max-width: 768px) {
+  :root {
+    --fs-4xl: 2rem;
+    --fs-3xl: 1.625rem;
+    --fs-2xl: 1.375rem;
+  }
+  .layout-container { padding: var(--space-5) var(--space-4); }
+}
+
+@media (max-width: 480px) {
+  .menu-screen__title { font-size: 1.75rem; }
+  .menu-screen__subtitle { font-size: var(--fs-base); }
+  .menu-screen__actions .button { min-width: 100%; }
+
+  .dialog-card { padding: var(--space-4); gap: var(--space-3); }
+  .dialog-card__avatar { width: 48px; height: 48px; font-size: var(--fs-lg); }
+  .dialog-card__text { font-size: var(--fs-base); }
+
+  .choice-screen__inner { padding: var(--space-5) var(--space-4); }
+  .choice-button { padding: var(--space-3) var(--space-4); }
+
+  .reward-screen__icon { font-size: 72px; }
+  .reward-screen__name { font-size: var(--fs-2xl); }
+}

@@ -1,0 +1,55 @@
+/* ============ КНОПКИ ============ */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-6);
+  min-height: 48px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  transition: all var(--transition-base);
+}
+
+.button--primary {
+  background: var(--ice-blue);
+  color: var(--mountain-night);
+}
+
+.button--primary:hover {
+  background: var(--ice-blue-dark);
+  color: var(--snow-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.button--primary:active { transform: translateY(0); }
+
+.button--secondary {
+  background: transparent;
+  border: 2px solid var(--rock-grey);
+  color: var(--snow-white);
+}
+
+.button--secondary:hover {
+  border-color: var(--ice-blue);
+  background: rgba(107, 174, 214, 0.1);
+}
+
+/* ============ LAYOUT ============ */
+.layout-container {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-6);
+}
+
+/* ============ APP ============ */
+.app {
+  min-height: 100vh;
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+
+.app--fading { opacity: 0; }
